@@ -75,9 +75,7 @@
 
 ## Introduction to C Programming
 
-This repository contains **introductory material and example source code for C programming**, developed for the **Computer Programming** course at the **University of West Attica (UNIWA)**.
-
-The project includes **theoretical documentation** and **simple C source files** intended for compilation and execution on a local machine.
+This guide explains how to set up, build, and run the project on your local machine.
 
 ---
 
