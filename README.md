@@ -8,6 +8,11 @@
   DEPARTMENT OF COMPUTER ENGINEERING AND INFORMATICS
 </p>
 
+<p align="center">
+  <a href="https://www.uniwa.gr" target="_blank">University of West Attica</a> ·
+  <a href="https://ice.uniwa.gr" target="_blank">Department of Computer Engineering and Informatics</a>
+</p>
+
 ---
 
 <p align="center">
@@ -42,7 +47,6 @@
   <a href="https://ice.uniwa.gr/en/emd_person/nikolaos-vassilas/" target="_blank">UNIWA Profile</a>
 </p>
 
-
 <p align="center">
   Co-supervisor: Georgios Meletiou, Laboratory Teaching Staff<br>
 </p>
@@ -53,15 +57,26 @@
 
 </hr>
 
+---
+
 <p align="center">
   Athens, October 2021
 </p>
 
 ---
 
-# Project Overview
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" width="250"/>
+</p>
+
+---
+
+# README
+
+## Introduction to C Programming
 
 This report covers the **fundamental concepts of the C programming language**, including:
+
 - The definition of a computer program
 - The software development lifecycle
 - Categories of programming errors
@@ -72,21 +87,20 @@ In addition, it presents a **practical analysis of a C program** designed to per
 
 ## Table of Contents
 
-| Section | Folder / File | Description |
-|------:|---------------|-------------|
-| 1 | `assign/` | Assignment material |
-| 1.1 | `assign/project1.png` | Assignment description / problem statement (English) |
-| 1.2 | `assign/εργασία1.png` | Assignment description / problem statement (Greek) |
-| 2 | `docs/` | Theoretical documentation |
-| 2.1 | `docs/Introduction.pdf` | Introductory theory and concepts (English) |
-| 2.2 | `docs/Εισαγωγή.pdf` | Introductory theory and concepts (Greek) |
-| 3 | `src/` | Source code implementations |
-| 3.1 | `src/C1aCorrect.c` | Correct implementation of the exercise |
-| 3.2 | `src/C1aWrong.c` | Incorrect implementation (for comparison / analysis) |
-| 4 | `README.md` | Repository overview and instructions |
+| Section | Folder / File           | Description                                          |
+| ------: | ----------------------- | ---------------------------------------------------- |
+|       1 | `assign/`               | Assignment material                                  |
+|     1.1 | `assign/project1.png`   | Assignment description / problem statement (English) |
+|     1.2 | `assign/εργασία1.png`   | Assignment description / problem statement (Greek)   |
+|       2 | `docs/`                 | Theoretical documentation                            |
+|     2.1 | `docs/Introduction.pdf` | Introductory theory and concepts (English)           |
+|     2.2 | `docs/Εισαγωγή.pdf`     | Introductory theory and concepts (Greek)             |
+|       3 | `src/`                  | Source code implementations                          |
+|     3.1 | `src/C1aCorrect.c`      | Correct implementation of the exercise               |
+|     3.2 | `src/C1aWrong.c`        | Incorrect implementation (for comparison / analysis) |
+|       4 | `README.md`             | Repository overview and instructions                 |
 
 ---
-
 
 ## 1. Theory Fundamentals
 
@@ -125,11 +139,11 @@ The report outlines the following **seven key stages** involved in developing an
 
 ### 1.3 Categories of Program Errors
 
-| Error Type      | Description                                                     | Example                                   |
-|-----------------|-----------------------------------------------------------------|-------------------------------------------|
-| **Syntax Error** | Violations of the language’s grammatical rules                  | Missing semicolon or quotation mark       |
-| **Logical Error** | Errors in logic that the compiler cannot detect                | Using subtraction instead of addition     |
-| **Runtime Error** | Errors that occur during execution and stop the program        | Division by zero                          |
+| Error Type        | Description                                             | Example                               |
+| ----------------- | ------------------------------------------------------- | ------------------------------------- |
+| **Syntax Error**  | Violations of the language’s grammatical rules          | Missing semicolon or quotation mark   |
+| **Logical Error** | Errors in logic that the compiler cannot detect         | Using subtraction instead of addition |
+| **Runtime Error** | Errors that occur during execution and stop the program | Division by zero                      |
 
 ---
 
@@ -137,8 +151,8 @@ The report outlines the following **seven key stages** involved in developing an
 
 The paper analyzes two versions of a C program:
 
-- **`C1aWrong.c`** – Contains multiple errors  
-- **`C1aCorrect.c`** – Corrected version of the program  
+- **`C1aWrong.c`** – Contains multiple errors
+- **`C1aCorrect.c`** – Corrected version of the program
 
 ### 2.1 Common Syntax Errors Identified
 
@@ -163,10 +177,13 @@ The program was tested using various integer inputs to demonstrate how C handles
 ### 3.1 Integer Division
 
 When performing the operation:
+
 ```bash
 5/10
 ```
+
 The program returns:
+
 ```bash
 0
 ```
@@ -179,81 +196,3 @@ This occurs because both operands are declared as `int`. As a result, the decima
 
 Using very large values (e.g., `54,645,234,234`) produces incorrect negative results.  
 This behavior is caused by **integer overflow**, where the value exceeds the maximum range supported by the standard `int` data type.
-
----
-
-# Installation & Setup Guide
-
-This repository contains **introductory material and example source code for C programming**, developed for the **Computer Programming** course at the **University of West Attica (UNIWA)**.
-
-The project includes **theoretical documentation** and **simple C source files** intended for compilation and execution on a local machine.
-
----
-
-## Prerequisites
-
-### Required Software
-
-- **C Compiler**
-  - Recommended:
-    - **GCC** (Linux / macOS / Windows via MinGW or WSL)
-
-- **Text Editor or IDE**
-  - Visual Studio Code `(Recommended)`
-  - Code::Blocks
-  - Dev-C++
-  - CLion
-  - Any plain text editor
-
-### Supported Operating Systems
-- Windows
-- Linux `(Recommended)`
-- macOS
-
----
-
-## Installation
-
-### 1. Clone the Repository
-
-Clone the repository to your local machine:
-
-```bash
-git clone https://github.com/Computer-Programming-aka-Uniwa/Intro.git
-```
-
-#### Alternative (Without Git)
-
-- Open the repository URL in your browser
-- Click Code → Download ZIP
-- Extract the ZIP file to a local directory
-
-## Compiling & Running the Programs
-### 2. Navigate to Source Directory
-```bash
-cd Intro/src
-```
-
-### 3. Compile the Correct Program
-Using GCC:
-```bash
-gcc C1aCorrect.c -o C1aCorrect
-```
-
-### 4. Run the Program
-Linux / macOS:
-```bash
-./C1aCorrect
-```
-Windows:
-```bash
-C1aCorrect.exe
-```
-
----
-
-## Open the Documentation
-1. Navigate to the `docs/` directory
-2. Open the report corresponding to your preferred language:
-    - English: `Introduction.pdf`
-    - Greek: `Εισαγωγή.pdf`
