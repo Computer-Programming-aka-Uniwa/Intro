@@ -98,7 +98,8 @@ In addition, it presents a **practical analysis of a C program** designed to per
 |       3 | `src/`                  | Source code implementations                          |
 |     3.1 | `src/C1aCorrect.c`      | Correct implementation of the exercise               |
 |     3.2 | `src/C1aWrong.c`        | Incorrect implementation (for comparison / analysis) |
-|       4 | `README.md`             | Repository overview and instructions                 |
+|       4 | `README.md`             | Project documentation                                |
+|       5 | `INSTALL.md`            | Usage instructions                                   |
 
 ---
 
